@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect attempt to access a non-existent property
+    let text = document.getElementById('myDiv').getAttribute('nonExistent');
+    console.log(text); // Logs 'null'
+    //Using innerText to access the text content of the div
+    let divText = document.getElementById('myDiv').innerText; 
+    console.log(divText); // Logs "This is some text." 
+  </script>
+</body>
+</html>
