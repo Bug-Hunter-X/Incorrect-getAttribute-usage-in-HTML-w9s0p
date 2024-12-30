@@ -1,0 +1,1 @@
+This repository demonstrates a common yet subtle error in HTML: incorrectly using the getAttribute method.  The bug.html file shows the erroneous code, while the bugSolution.html file provides the correct approach.  Understanding how to properly use the getAttribute and innerText methods to retrieve data from HTML elements is crucial for preventing unexpected null values.
