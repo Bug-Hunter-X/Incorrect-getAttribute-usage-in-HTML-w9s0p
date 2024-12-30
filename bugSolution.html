@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv" data-text="This is some data">
+    This is some text.
+  </div>
+  <script>
+    // Correct way to access a data attribute
+    let dataText = document.getElementById('myDiv').getAttribute('data-text');
+    console.log(dataText); // Logs "This is some data"
+    //Alternatively use innerText to access the text content 
+    let divText = document.getElementById('myDiv').innerText; 
+    console.log(divText); // Logs "This is some text."
+  </script>
+</body>
+</html>
